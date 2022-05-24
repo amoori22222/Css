@@ -1,0 +1,146 @@
+/* /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(180, 178, 178);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    /* margin: 10px 0px; */
+}
+
+.title {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-indent: 60px;
+}
+
+.title:hover {
+    color: aqua;
+}
+
+#branding {
+    position:absolute;
+}
+
+nav a {
+    width: auto;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    padding: 0px 10px 0px 30px;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+.main {
+    padding: 100px 200px;
+    background-image: url('./img/beautiful-model-with-long-smooth-flying-blonde-hair-isolated-dark-grey-studio-background-young-caucasian-model-with-well-kept-skin-hair-blowing-air.jpg'); 
+    background-size: cover;
+}   
+
+.main h1,
+.main h3 {
+    color: #f8f4f4;
+    display: inline-block;
+    width: fit-content;
+    margin: 15px;
+}
+
+.main button {
+    display: inline-block;
+    width: fit-content;
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.main button:hover {
+    color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+    flex-direction: row;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 17em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+}
+
+.project-description {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 1em;
+    color: black;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
