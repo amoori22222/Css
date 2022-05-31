@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Cairo', sans-serif;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
     margin: 0px;
@@ -23,11 +22,12 @@ header {
 }
 
 .title {
+    /* letter-spacing: 3px; */
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 1.8em;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-indent: 60px;
 }
 
