@@ -2,72 +2,99 @@
 
 * {
     font-family: 'Cairo', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* box-sizing: border-box;
+    scroll-behavior: smooth; */
     margin: 0px;
     padding: 0px;
 }
 
 header {
-    background-color: rgb(180, 178, 178);
-    width: 100%;
-    height: 100px;
-    position: relative;
+    background-color: gray;
+    width: auto;
+    height: 50px;
+    position:sticky;
+    top: 0px;
     z-index: 999;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    display: flex;
     padding: 10px 100px;
-    /* margin: 10px 0px; */
+    align-items: center;
 }
 
-.title {
-    /* letter-spacing: 3px; */
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+
+#branding {
+    position: relative;
+    top: 25px;
+}
+
+.logo {
+    width: 50px;
+}
+
+header h1 {
     font-size: 1.8em;
     font-weight: 700;
     text-transform: capitalize;
-    text-indent: 60px;
+    position: relative;
+    bottom: 27px;
+    left: 60px;
 }
 
-.title:hover {
-    color: aqua;
-}
-
-#branding {
-    position:absolute;
-}
-
-nav a {
-    width: auto;
+header a{
     text-decoration: none;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    padding: 0px 10px 0px 30px;
+    color: #ffffff;
 }
 
-nav a:hover {
-    color: aqua;
+header a:hover {
+    color: purple;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-left: 30px;
+}
+
+section {
+    padding: 200px 200px ;
 }
 
 .main {
-    padding: 100px 200px;
-    background-image: url('./img/beautiful-model-with-long-smooth-flying-blonde-hair-isolated-dark-grey-studio-background-young-caucasian-model-with-well-kept-skin-hair-blowing-air.jpg'); 
-    background-size: cover;
+    background-image:url(./img/photo-1521590832167-7bcbfaa6381f.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    /* margin-top: 20px; */
 }   
 
-.main h1,
-.main h3 {
-    color: #f8f4f4;
+.main h1 {
     display: inline-block;
     width: fit-content;
-    margin: 15px;
+    /* margin: 15px; */
 }
 
-.main button {
+.main h1::first-line {
+    color: rgb(3, 37, 32);
+    font-size: 1.5em;
+}
+
+.main h3::first-line {
+    color: rgb(3, 37, 32);
+    font-size: 1.5em;
+}
+
+/* .social-icons a {
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 30px;
+    text-decoration: none;
+    padding-right: 30px;
+} */
+
+/* .main button {
     display: inline-block;
     width: fit-content;
     color: #fff;
@@ -144,4 +171,4 @@ nav a:hover {
 
 .more-details:hover {
     color: #601cfc;
-}
+} */
