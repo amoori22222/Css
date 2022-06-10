@@ -2,42 +2,48 @@
 
 * {
     font-family: 'Cairo', sans-serif;
-    /* box-sizing: border-box;
-    scroll-behavior: smooth; */
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
     margin: 0px;
     padding: 0px;
 }
 
+:root {
+    --main_color: red;
+    --main_padding: 20px;
+}
+
 header {
     background-color: gray;
-    width: auto;
-    height: 50px;
+    width: 100%;
     position:sticky;
     top: 0px;
     z-index: 999;
-    justify-content: space-between;
     display: flex;
-    padding: 10px 100px;
+    justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
 }
 
+header div{
+    width: 17.6%;
+}
 
-#branding {
-    position: relative;
-    top: 25px;
+.page-title {
+    display: flex;
+    width: 15.5%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
 }
 
 .logo {
     width: 50px;
+    height: 45px;
 }
 
 header h1 {
-    font-size: 1.8em;
-    font-weight: 700;
     text-transform: capitalize;
-    position: relative;
-    bottom: 27px;
-    left: 60px;
 }
 
 header a{
@@ -49,54 +55,55 @@ header a:hover {
     color: purple;
 }
 
+.navigation {
+    margin-right: 180px;
+}
+
 .navigation ul {
     display: flex;
     list-style: none;
 }
 
 .navigation li {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
-section {
+/* section {
     padding: 200px 200px ;
-}
+} */
 
 .main {
-    background-image:url(./img/photo-1521590832167-7bcbfaa6381f.jpg);
+    /* background-image:url(./img/photo-1521590832167-7bcbfaa6381f.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center center;
-    /* margin-top: 20px; */
+    background-position: center center; */
+    /* background-color: black; */
+    padding: 166px 200px ;
+    display: flex;
 }   
 
 .main h1 {
     display: inline-block;
-    width: fit-content;
-    /* margin: 15px; */
 }
 
 .main h1::first-line {
-    color: rgb(3, 37, 32);
+    color: rgb(56, 202, 178);
     font-size: 1.5em;
+
+}
+
+.main h3 {
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .main h3::first-line {
-    color: rgb(3, 37, 32);
-    font-size: 1.5em;
+    color: rgb(56, 202, 178);
+    font-size: 25.7px;
 }
 
-/* .social-icons a {
-    color: #fff;
-    font-size: 2.0em;
-    font-weight: 30px;
-    text-decoration: none;
-    padding-right: 30px;
-} */
 
-/* .main button {
-    display: inline-block;
-    width: fit-content;
+.main button {
     color: #fff;
     background-color: #3a6cf4;
     text-decoration: none;
@@ -105,8 +112,7 @@ section {
     padding: 0.9375em 2.1875em;
     letter-spacing: 1px;
     border-radius: 15px;
-    margin-bottom: 40px;
-    margin: 15px;
+    margin-top: 40px;
     transition: 0.5s ease;
 }
 
@@ -115,35 +121,65 @@ section {
     transform: scale(1.1);
 }
 
-.projects {
-    background-color: #000016;
+.social-icons a {
+    color: rgb(139, 10, 10);
+    font-size: 2.0em;
+    font-weight: 30px;
+    text-decoration: none;
+    padding-right: 30px;
 }
 
-.projects .content {
-    margin-top: 30px;
-    flex-direction: row;
+.service {
+    background-color: #040430;
+    display: flex;
+    flex-flow: row, nowrap;
+}
+
+.service-card {
+    background-color: #fff;
+    width: 15.70em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 100px auto 155px;
+    transition: 0.7s ease;
+} 
+
+.service-card:hover {
+    transform: scale(1.1);
+}
+
+.service-image img {
+    width: 100%;
+}
+
+.service-description {
+    padding: 1em;
+}
+
+.service-title {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-left: 32px;
 }
 
 .project-card {
     background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 14em;
-    width: 17em;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 20px;
-    transition: 0.5s ease;
-}
+    width: 15.70em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 70px auto ;
+    transition: 0.7s ease;
+} 
 
 .project-card:hover {
     transform: scale(1.1);
 }
 
-.project-card:hover .project-image{
-    opacity: 0.9;
-}
-
-.project-image img{
+.project-image img {
     width: 100%;
 }
 
@@ -160,15 +196,16 @@ section {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    font-size: 800;
+    /* font-size: 800; */
     margin-top: 10px;
 }
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    color: black;
 }
 
 .more-details:hover {
-    color: #601cfc;
-} */
+    color: rebeccapurple;
+}
+
