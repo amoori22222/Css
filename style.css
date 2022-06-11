@@ -14,36 +14,49 @@
 }
 
 header {
-    background-color: gray;
+    background-color: #040430;
     width: 100%;
+    height: 50px;
     position:sticky;
     top: 0px;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
-header div{
-    width: 17.6%;
+header::after {
+    content: '';
+    position: absolute;
+    width: 28%;
+    height: 1px;
+    top: 48px;
+    right: 70px;
+    background-image: linear-gradient(to right, rgb(0, 195, 255) 100%,rgb(0, 195, 255));
+    display: none;
+}
+
+header:hover::after {
+    display: block;
 }
 
 .page-title {
     display: flex;
-    width: 15.5%;
+    width: 12%;
     justify-content: space-between;
     align-items: center;
     margin-left: 100px;
 }
 
 .logo {
-    width: 50px;
-    height: 45px;
+    width: 40px;
+    height: 30px;
 }
 
 header h1 {
     text-transform: capitalize;
+    font-size:x-large;
 }
 
 header a{
@@ -56,7 +69,7 @@ header a:hover {
 }
 
 .navigation {
-    margin-right: 180px;
+    margin-right: 100px;
 }
 
 .navigation ul {
@@ -78,8 +91,9 @@ header a:hover {
     background-size:cover;
     background-position: center center; */
     /* background-color: black; */
-    padding: 166px 200px ;
+    padding: 170px 200px ;
     display: flex;
+    background-color: #040430;
 }   
 
 .main h1 {
@@ -130,14 +144,15 @@ header a:hover {
 }
 
 .service {
-    background-color: #040430;
+    background-color: rgb(216, 40, 40);
     display: flex;
-    flex-flow: row, nowrap;
+    flex-flow: row, wrap;
+    padding: 33px 0px 20px;
 }
 
 .service-card {
     background-color: #fff;
-    width: 15.70em;
+    width: 20%;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 20px;
     padding: 25px;
@@ -165,9 +180,16 @@ header a:hover {
     padding-left: 32px;
 }
 
+.project {
+    background-color: rgb(151, 40, 216);
+    display: flex;
+    flex-flow: row, nowrap;
+    padding: 6px 0px;
+}
+
 .project-card {
     background-color: #fff;
-    width: 15.70em;
+    width: 20%;;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 20px;
     padding: 25px;
@@ -181,6 +203,7 @@ header a:hover {
 
 .project-image img {
     width: 100%;
+    height: 70%;
 }
 
 .project-description {
